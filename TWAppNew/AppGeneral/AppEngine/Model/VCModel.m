@@ -24,18 +24,13 @@
                       forPath:(NSString *)path
                      finished:(TWFinishedBlock)finished
                        failed:(TWFailedBlock)failed
-                    imageData:(NSData *)imageData
 {
     MKNetworkEngine *networkEngine = appDelegate().networkEngine;
     MKNetworkOperation *operation = [networkEngine operationWithPath:path
                                                               params:params
                                                           httpMethod:self.httpMethod];
-    NSString *mimeType = [NSData contentTypeForImageData:imageData];
-    [operation addData:imageData forKey:@"content" mimeType:mimeType fileName:@"photo"];
-
     [operation addCompletionHandler:^(MKNetworkOperation *completedOperation)
      {
-         NSLog(@"string:%@", completedOperation.responseString);
          NSDictionary *resultDict = completedOperation.responseJSON;
          if (completedOperation.HTTPStatusCode == 200)
          {             
@@ -49,9 +44,6 @@
              }
              else
              {
-//                 [[MessageStatusBar sharedInstance] updateMessage:resultDict[@"msg"]];
-//                 [[MessageStatusBar sharedInstance] hideAfterDelay:3];
-                 
                  failed(resultDict[@"msg"]);
              }
          }
@@ -101,17 +93,18 @@
 - (void)upLoadFile:(NSData *)fileData
           hostName:(NSString *)hostName
               path:(NSString *)path
-          photoKey:(NSString *)photoKey
+           fileKey:(NSString *)fileKey
           fileName:(NSString *)fileName
           finished:(TWFinishedBlock)finished
             failed:(TWFailedBlock)failed
+
 {
     MKNetworkEngine *networkEngine = [[MKNetworkEngine alloc] initWithHostName:hostName];
     MKNetworkOperation *operation = [networkEngine operationWithPath:path
                                                               params:nil
                                                           httpMethod:@"POST"];
     NSString *mimeType = [NSData contentTypeForImageData:fileData];
-    [operation addData:fileData forKey:photoKey mimeType:mimeType fileName:fileName];
+    [operation addData:fileData forKey:fileKey mimeType:mimeType fileName:fileName];
     [operation addCompletionHandler:^(MKNetworkOperation *completedOperation)
      {
          NSDictionary *resultDict = completedOperation.responseJSON;

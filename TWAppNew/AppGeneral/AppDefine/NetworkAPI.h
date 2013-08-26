@@ -24,14 +24,13 @@ typedef enum
     TWWindowsPhone   = 4
 } TWOSPlatform;
 
+//线上主站点地址
+#define kHostSite               @"www.mayibangbang.com/index.php/api/"
 
+//图片前缀地址
 #define kImagePrex              @"http://mybb.leepood.com/"
 
-#define kHostSite               @"xinkb.org/api"//线上主站点地址
-
 //主页新鲜事
-#define kHomeList               @"baike.baidu.com/view"
-
-#define kUploadImage            @"upload"
+#define kTestList               @"getFeeds"
 
 

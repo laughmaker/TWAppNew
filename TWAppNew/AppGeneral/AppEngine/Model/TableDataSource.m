@@ -23,7 +23,7 @@
     {
         self.cellIdentifier     = cellIdentifier;
         self.cellConfigureBlock = [cellConfigureBlock copy];
-        self.tableItems         = [NSMutableArray array];
+//        self.tableItems         = [NSMutableArray array];
     }
     return self;
 }

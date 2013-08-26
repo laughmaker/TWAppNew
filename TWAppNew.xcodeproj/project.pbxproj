@@ -142,6 +142,8 @@
 		25CC3A9117CB301800AAC760 /* slider_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CC3A1617CB301800AAC760 /* slider_normal@2x.png */; };
 		25CC3A9217CB301800AAC760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A1717CB301800AAC760 /* main.m */; };
 		25CC3A9B17CB362800AAC760 /* UITextView+FilterEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A9A17CB362800AAC760 /* UITextView+FilterEmoji.m */; };
+		25CC3AA217CB454B00AAC760 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A9F17CB454B00AAC760 /* TestCell.m */; };
+		25CC3AA317CB454B00AAC760 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3AA117CB454B00AAC760 /* TestVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -374,6 +376,10 @@
 		25CC3A9917CB362800AAC760 /* UITextView+FilterEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+FilterEmoji.h"; sourceTree = "<group>"; };
 		25CC3A9A17CB362800AAC760 /* UITextView+FilterEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FilterEmoji.m"; sourceTree = "<group>"; };
 		25CC3A9C17CB367B00AAC760 /* TWAppNew-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWAppNew-Prefix.pch"; sourceTree = "<group>"; };
+		25CC3A9E17CB454B00AAC760 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		25CC3A9F17CB454B00AAC760 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		25CC3AA017CB454B00AAC760 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		25CC3AA117CB454B00AAC760 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +452,7 @@
 		25CC392117CB301800AAC760 /* TWAppNew */ = {
 			isa = PBXGroup;
 			children = (
+				25CC3A9D17CB454B00AAC760 /* Test */,
 				25CC392217CB301800AAC760 /* AppGeneral */,
 				25CC393D17CB301800AAC760 /* Main.storyboard */,
 				25CC394117CB301800AAC760 /* Images.xcassets */,
@@ -958,6 +965,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		25CC3A9D17CB454B00AAC760 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				25CC3A9E17CB454B00AAC760 /* TestCell.h */,
+				25CC3A9F17CB454B00AAC760 /* TestCell.m */,
+				25CC3AA017CB454B00AAC760 /* TestVC.h */,
+				25CC3AA117CB454B00AAC760 /* TestVC.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1141,7 +1159,9 @@
 				25CC3A4F17CB301800AAC760 /* SDWebImagePrefetcher.m in Sources */,
 				25CC3A9217CB301800AAC760 /* main.m in Sources */,
 				25CC3A7017CB301800AAC760 /* UIFont+Alert.m in Sources */,
+				25CC3AA217CB454B00AAC760 /* TestCell.m in Sources */,
 				25CC3A2A17CB301800AAC760 /* NSFileManager+ Addition.m in Sources */,
+				25CC3AA317CB454B00AAC760 /* TestVC.m in Sources */,
 				25CC3A7317CB301800AAC760 /* MBHUDView.m in Sources */,
 				25CC3A5417CB301800AAC760 /* CheckBoxView.m in Sources */,
 				25CC3A3917CB301800AAC760 /* UIView+Layer.m in Sources */,

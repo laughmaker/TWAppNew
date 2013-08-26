@@ -21,11 +21,11 @@ typedef void (^TWFailedBlock)   (NSString *error);
 //网络请求方法，默认为POST
 @property (copy, nonatomic) NSString *httpMethod;
 
+//请求数据接口
 - (void)requestDataWithParams:(NSDictionary *)params
                       forPath:(NSString *)path
                      finished:(TWFinishedBlock)finished
-                       failed:(TWFailedBlock)failed
-                    imageData:(NSData *)imageData;
+                       failed:(TWFailedBlock)failed;
 
 
 //下载文件,hostName为主站点名。
@@ -35,13 +35,15 @@ typedef void (^TWFailedBlock)   (NSString *error);
                         finished:(TWFinishedBlock)finished
                           failed:(TWFailedBlock)failed;
 
-//上传文件，path为要上传的接口，photoKey为后台设定的关键字，fileName为自行设定的文件名。
+//上传文件，path为要上传的接口，fileKey为后台设定的关键字，fileName为自行设定的文件名。
 - (void)upLoadFile:(NSData *)fileData
           hostName:(NSString *)hostName
               path:(NSString *)path
-          photoKey:(NSString *)photoKey
+          fileKey:(NSString *)fileKey
           fileName:(NSString *)fileName
           finished:(TWFinishedBlock)finished
             failed:(TWFailedBlock)failed;
 
 @end
+
+

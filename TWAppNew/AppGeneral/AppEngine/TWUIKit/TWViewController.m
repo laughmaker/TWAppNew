@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 
-    [self.view setBackgroundColor:[UIColor orangeColor]];
+//    [self.view setBackgroundColor:[UIColor orangeColor]];
 }
 
 

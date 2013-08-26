@@ -15,7 +15,7 @@
     self = [super init];
     if (self)
     {
-        self.tableItems = [NSMutableArray array];
+//        self.tableItems = [NSMutableArray array];
     }
     return self;
 }

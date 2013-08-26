@@ -23,7 +23,5 @@
 //在更新数据时复位参数
 - (void)resetRequestParams;
 
-//更新Model数据,子类可重写这个方法。
-- (void)updateModelData:(NSDictionary *)datas;
 
 @end
