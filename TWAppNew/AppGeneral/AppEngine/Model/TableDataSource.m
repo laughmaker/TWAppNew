@@ -9,8 +9,8 @@
 #import "TableDataSource.h"
 
 @interface TableDataSource ()
-@property (copy, nonatomic) NSString *cellIdentifier;
-@property (copy, nonatomic) CellConfigureBlock cellConfigureBlock;
+@property (copy, nonatomic) NSString            *cellIdentifier;
+@property (copy, nonatomic) CellConfigureBlock  cellConfigureBlock;
 
 @end
 
@@ -23,7 +23,6 @@
     {
         self.cellIdentifier     = cellIdentifier;
         self.cellConfigureBlock = [cellConfigureBlock copy];
-//        self.tableItems         = [NSMutableArray array];
     }
     return self;
 }

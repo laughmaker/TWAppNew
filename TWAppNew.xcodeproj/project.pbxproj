@@ -31,7 +31,6 @@
 		25CC3A2217CB301800AAC760 /* TWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC393817CB301800AAC760 /* TWLabel.m */; };
 		25CC3A2317CB301800AAC760 /* TWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC393A17CB301800AAC760 /* TWTextField.m */; };
 		25CC3A2417CB301800AAC760 /* TWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC393C17CB301800AAC760 /* TWViewController.m */; };
-		25CC3A2517CB301800AAC760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CC393D17CB301800AAC760 /* Main.storyboard */; };
 		25CC3A2617CB301800AAC760 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25CC393F17CB301800AAC760 /* InfoPlist.strings */; };
 		25CC3A2717CB301800AAC760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CC394117CB301800AAC760 /* Images.xcassets */; };
 		25CC3A2817CB301800AAC760 /* NSData+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC394617CB301800AAC760 /* NSData+Addition.m */; };
@@ -144,6 +143,7 @@
 		25CC3A9B17CB362800AAC760 /* UITextView+FilterEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A9A17CB362800AAC760 /* UITextView+FilterEmoji.m */; };
 		25CC3AA217CB454B00AAC760 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A9F17CB454B00AAC760 /* TestCell.m */; };
 		25CC3AA317CB454B00AAC760 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3AA117CB454B00AAC760 /* TestVC.m */; };
+		25D2574817CC3CDC00F3A30C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D2574617CC3CDC00F3A30C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,7 +186,6 @@
 		25CC393A17CB301800AAC760 /* TWTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTextField.m; sourceTree = "<group>"; };
 		25CC393B17CB301800AAC760 /* TWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWViewController.h; sourceTree = "<group>"; };
 		25CC393C17CB301800AAC760 /* TWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWViewController.m; sourceTree = "<group>"; };
-		25CC393E17CB301800AAC760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25CC394017CB301800AAC760 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25CC394117CB301800AAC760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		25CC394417CB301800AAC760 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
@@ -380,6 +379,7 @@
 		25CC3A9F17CB454B00AAC760 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		25CC3AA017CB454B00AAC760 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		25CC3AA117CB454B00AAC760 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		25D2574717CC3CDC00F3A30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,8 +454,8 @@
 			children = (
 				25CC3A9D17CB454B00AAC760 /* Test */,
 				25CC392217CB301800AAC760 /* AppGeneral */,
-				25CC393D17CB301800AAC760 /* Main.storyboard */,
 				25CC394117CB301800AAC760 /* Images.xcassets */,
+				25D2574617CC3CDC00F3A30C /* Main.storyboard */,
 				25CC3A9517CB304600AAC760 /* Supporting Files */,
 			);
 			path = TWAppNew;
@@ -1062,7 +1062,6 @@
 				25CC3A5F17CB301800AAC760 /* cb_glossy_on.png in Resources */,
 				25CC3A5A17CB301800AAC760 /* cb_dark_off@2x.png in Resources */,
 				25CC3A9117CB301800AAC760 /* slider_normal@2x.png in Resources */,
-				25CC3A2517CB301800AAC760 /* Main.storyboard in Resources */,
 				25CC3A5717CB301800AAC760 /* cb_box_on.png in Resources */,
 				25CC3A5E17CB301800AAC760 /* cb_glossy_off@2x.png in Resources */,
 				25CC3A8D17CB301800AAC760 /* slider_gray@2x.png in Resources */,
@@ -1071,6 +1070,7 @@
 				25CC3A6317CB301800AAC760 /* cb_green_on.png in Resources */,
 				25CC3A8F17CB301800AAC760 /* slider_hover@2x.png in Resources */,
 				25CC3A6517CB301800AAC760 /* cb_mono_off.png in Resources */,
+				25D2574817CC3CDC00F3A30C /* Main.storyboard in Resources */,
 				25CC3A5617CB301800AAC760 /* cb_box_off@2x.png in Resources */,
 				25CC3A6717CB301800AAC760 /* cb_mono_on.png in Resources */,
 				25CC3A8E17CB301800AAC760 /* slider_hover.png in Resources */,
@@ -1175,20 +1175,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		25CC393D17CB301800AAC760 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25CC393E17CB301800AAC760 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		25CC393F17CB301800AAC760 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				25CC394017CB301800AAC760 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25D2574617CC3CDC00F3A30C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25D2574717CC3CDC00F3A30C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

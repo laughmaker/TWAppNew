@@ -21,11 +21,13 @@ typedef void (^TWUpdateDataBlock)   (void);
 
 
 @interface TableDelegate : NSObject <UITableViewDelegate, PullTableViewDelegate>
-
+//数据源，由数据模型给定
 @property (strong, nonatomic) NSMutableArray    *tableItems;
 
 @property (copy, nonatomic) SelectCellBlock     selectCell;
-@property (copy, nonatomic) CellHeightBlock     cellHeight;//如果没有设置，则为默认的44高
+
+//如果没有设置，则为默认的44高
+@property (copy, nonatomic) CellHeightBlock     cellHeight;
 
 @property (copy, nonatomic) TWLoadMoreDataBlock loadMoreData;
 @property (copy, nonatomic) TWUpdateDataBlock   updateData;

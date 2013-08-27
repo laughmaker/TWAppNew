@@ -17,9 +17,6 @@
 @property (assign, nonatomic, readonly) NSInteger      totalPage;//初始值为－1
 @property (assign, nonatomic, readonly) NSInteger      toPage;//初始值为0
 
-//判断是下拉刷新数据还是加载更多，默认为YES
-@property (assign, nonatomic, getter = isRefreshData) BOOL refreshData;
-
 //在更新数据时复位参数
 - (void)resetRequestParams;
 

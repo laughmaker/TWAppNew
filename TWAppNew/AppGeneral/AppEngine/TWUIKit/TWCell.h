@@ -13,4 +13,7 @@
 //基类方法，由子类实现具体功能
 - (void)configureCellWithCellDatas:(id)cellDatas;
 
+//默认返回44
++ (CGFloat)cellHeightForCellDatas:(NSDictionary *)cellDatas;
+
 @end

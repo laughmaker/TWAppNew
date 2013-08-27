@@ -23,6 +23,11 @@
     [super setSelected:selected animated:animated];
 }
 
++ (CGFloat)cellHeightForCellDatas:(NSDictionary *)cellDatas
+{
+    return 44;
+}
+
 - (void)configureCellWithCellDatas:(id)cellDatas{}
 
 @end

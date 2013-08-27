@@ -13,9 +13,6 @@
 @property (assign, nonatomic) NSInteger      totalPage;
 @property (assign, nonatomic) NSInteger      toPage;
 
-//@property (copy, nonatomic) TWFinishedBlock  finishedBlock;
-//@property (copy, nonatomic) TWFailedBlock    failedBlock;
-
 //更新Model数据,子类可重写这个方法。
 - (void)updateModelData:(NSDictionary *)datas;
 
@@ -35,7 +32,7 @@
 
 - (void)resetRequestParams
 {
-    self.refreshData = YES;
+//    self.refreshData = YES;
     self.toPage      = 0;
     self.totalPage   = -1;
     [self.tableItems removeAllObjects];

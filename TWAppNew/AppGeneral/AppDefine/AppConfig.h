@@ -34,9 +34,13 @@
 /*---------------------------------程序界面配置信息-------------------------------------*/
 
 //设置app界面字体及颜色
+
 #define kTitleFontLarge              [UIFont boldSystemFontOfSize:25]//一级标题字号
 #define kTitleFontMiddle             [UIFont boldSystemFontOfSize:19]//二级标题字号
 #define kTitleFontSmall              [UIFont boldSystemFontOfSize:15]//三级标题字号
+
+//标题颜色
+#define kTitleColorBlack             [UIColor blackColor]
 
 #define kContentFontLarge            [UIFont systemFontOfSize:15]  //内容部分大字号
 #define kContentFontMiddle           [UIFont systemFontOfSize:13]  //内容部分中字号
@@ -44,7 +48,7 @@
 
 //内容部分正常显示颜色和突出显示颜色
 #define kContentColorNormal      [UIColor colorWithRed:57/255.0 green:32/255.0 blue:0/255.0 alpha:1]
-#define kContentColorHighlight   [UIColor colorWithRed:57/255.0 green:32/255.0 blue:0/255.0 alpha:1]
+#define kContentColorHighlight   [UIColor colorWithRed:0/255.0 green:191/255.0 blue:225/255.0 alpha:1]
 
 //TableView相关设置
 //设置TableView分割线颜色

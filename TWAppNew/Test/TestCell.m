@@ -10,42 +10,41 @@
 
 @implementation TestCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
-    if (self)
-    {
-        [self defaultInit];
-    }
-    return self;
-}
-
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
     if (self)
-    {
-        [self defaultInit];
-    }
+    { }
     return self;
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    [self defaultInit];
 }
 
 - (void)defaultInit
 {
     self.selectionStyle = UITableViewCellSelectionStyleGray;
-    [self.nicknameLbl setFont:kTitleFontMiddle];
-    [self.nicknameLbl setTextColor:kContentColorHighlight];
-    [self.contentLbl setFont:kContentFontMiddle];
-    [self.thumbnail setBackgroundColor:[UIColor brownColor]];
+    
+    self.nicknameLbl.font           = kTitleFontMiddle;
+    self.nicknameLbl.textColor      = kTitleColorBlack;
+    self.contentLbl.font            = kContentFontMiddle;
+    self.contentLbl.textColor       = kContentColorHighlight;
+    self.thumbnail.backgroundColor   = [UIColor brownColor];
+    self.nicknameLbl.backgroundColor = [UIColor clearColor];
+    self.contentLbl.backgroundColor  = [UIColor clearColor];
 }
 
 - (void)configureCellWithCellDatas:(id)cellDatas
 {
     [super configureCellWithCellDatas:cellDatas];
-    [self.nicknameLbl setText:cellDatas[@"nickname"]];
     
-    self.contentLbl.height = [[self class] heightForContent:cellDatas[@"content"]];
-    [self.contentLbl setText:cellDatas[@"content"]];
+    self.nicknameLbl.text  = cellDatas[@"nickname"];
+    self.contentLbl.height = [self.class heightForContent:cellDatas[@"content"]];
+    self.contentLbl.text   = cellDatas[@"content"];
 
     NSString *portraintUrl = [NSString stringWithFormat:@"%@%@", kImagePrex, cellDatas[@"avatar"]];
     [self.thumbnail setImageWithURL:[NSURL URLWithString:portraintUrl]];
@@ -53,19 +52,18 @@
 
 + (CGFloat)heightForContent:(NSString *)content
 {
-    CGSize contrainSize = CGSizeMake(200, 1500);
-    UIFont *font = [UIFont systemFontOfSize:15];
-    CGSize size = [content sizeWithFont:font constrainedToSize:contrainSize];
+    CGSize contrainSize = CGSizeMake(210, 1500);
+    CGSize size = [content sizeWithFont:kContentFontMiddle constrainedToSize:contrainSize];
     return size.height;
 }
 
 + (CGFloat)cellHeightForCellDatas:(NSDictionary *)cellDatas
 {
     CGFloat contentHeight = [self.class heightForContent:cellDatas[@"content"]];
-    if (contentHeight < 40)
-        return 90;
+    if (contentHeight < 25)
+        return 70;
 
-    return contentHeight + 30;
+    return contentHeight + 50;
 }
 
 
