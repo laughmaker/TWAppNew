@@ -10,4 +10,14 @@
 
 @interface TWViewController : UIViewController
 
+- (UIView *)errorView;
+- (UIView *)loadingView;
+
+- (void)showLoadingAnimated:(BOOL)animated;
+- (void)hideLoadingViewAnimated:(BOOL)animated;
+
+- (void)showErrorViewAnimated:(BOOL)animated;
+- (void)hideErrorViewAnimated:(BOOL)animated;
+
+
 @end

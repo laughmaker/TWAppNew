@@ -6,15 +6,15 @@
 //  Copyright (c) 2013年 makeLaugh. All rights reserved.
 //
 
-#import "UITextView+FilterEmoji.h"
+#import "NSString+FilterEmoji.h"
 
-@implementation UITextView (FilterEmoji)
+@implementation NSString (FilterEmoji)
 
 - (BOOL)containsEmoji
 {
     __block BOOL returnValue = NO;
     
-    [self.text enumerateSubstringsInRange:NSMakeRange(0, self.text.length)
+    [self enumerateSubstringsInRange:NSMakeRange(0, self.length)
                                   options:NSStringEnumerationByComposedCharacterSequences
                                usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop)
      {

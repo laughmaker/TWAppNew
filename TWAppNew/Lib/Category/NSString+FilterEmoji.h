@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITextView (FilterEmoji)
+@interface NSString (FilterEmoji)
 - (BOOL)containsEmoji;
 
 @end

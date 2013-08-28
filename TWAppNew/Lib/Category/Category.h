@@ -26,3 +26,4 @@
 #import "UIDevice+IdentifierAddition.h"
 #import "UIImageView+LBBlurredImage.h"
 #import "NSString+Regular.h"
+#import "NSString+FilterEmoji.h"

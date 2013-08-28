@@ -22,6 +22,8 @@
 		2586529217C4736D009BBAC2 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2586529117C4736D009BBAC2 /* CoreImage.framework */; };
 		2586529417C47375009BBAC2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2586529317C47375009BBAC2 /* MapKit.framework */; };
 		2586529617C4737B009BBAC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2586529517C4737B009BBAC2 /* CoreLocation.framework */; };
+		25A68DFF17CD8DE700D6D2AE /* TWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A68DFE17CD8DE700D6D2AE /* TWTextView.m */; };
+		25A68E0217CD8E3200D6D2AE /* TWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A68E0117CD8E3200D6D2AE /* TWButton.m */; };
 		25CC3A1C17CB301800AAC760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC392A17CB301800AAC760 /* AppDelegate.m */; };
 		25CC3A1D17CB301800AAC760 /* TableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC392D17CB301800AAC760 /* TableDataSource.m */; };
 		25CC3A1E17CB301800AAC760 /* TableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC392F17CB301800AAC760 /* TableDelegate.m */; };
@@ -140,7 +142,7 @@
 		25CC3A9017CB301800AAC760 /* slider_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CC3A1517CB301800AAC760 /* slider_normal.png */; };
 		25CC3A9117CB301800AAC760 /* slider_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25CC3A1617CB301800AAC760 /* slider_normal@2x.png */; };
 		25CC3A9217CB301800AAC760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A1717CB301800AAC760 /* main.m */; };
-		25CC3A9B17CB362800AAC760 /* UITextView+FilterEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A9A17CB362800AAC760 /* UITextView+FilterEmoji.m */; };
+		25CC3A9B17CB362800AAC760 /* NSString+FilterEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A9A17CB362800AAC760 /* NSString+FilterEmoji.m */; };
 		25CC3AA217CB454B00AAC760 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3A9F17CB454B00AAC760 /* TestCell.m */; };
 		25CC3AA317CB454B00AAC760 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC3AA117CB454B00AAC760 /* TestVC.m */; };
 		25D2574817CC3CDC00F3A30C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D2574617CC3CDC00F3A30C /* Main.storyboard */; };
@@ -164,6 +166,10 @@
 		2586529117C4736D009BBAC2 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		2586529317C47375009BBAC2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2586529517C4737B009BBAC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25A68DFD17CD8DE700D6D2AE /* TWTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTextView.h; sourceTree = "<group>"; };
+		25A68DFE17CD8DE700D6D2AE /* TWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTextView.m; sourceTree = "<group>"; };
+		25A68E0017CD8E3200D6D2AE /* TWButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWButton.h; sourceTree = "<group>"; };
+		25A68E0117CD8E3200D6D2AE /* TWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWButton.m; sourceTree = "<group>"; };
 		25CC392417CB301800AAC760 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		25CC392517CB301800AAC760 /* MacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
 		25CC392617CB301800AAC760 /* NetworkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkAPI.h; sourceTree = "<group>"; };
@@ -372,8 +378,8 @@
 		25CC3A1617CB301800AAC760 /* slider_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider_normal@2x.png"; sourceTree = "<group>"; };
 		25CC3A1717CB301800AAC760 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25CC3A1817CB301800AAC760 /* TWAppNew-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TWAppNew-Info.plist"; sourceTree = "<group>"; };
-		25CC3A9917CB362800AAC760 /* UITextView+FilterEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+FilterEmoji.h"; sourceTree = "<group>"; };
-		25CC3A9A17CB362800AAC760 /* UITextView+FilterEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FilterEmoji.m"; sourceTree = "<group>"; };
+		25CC3A9917CB362800AAC760 /* NSString+FilterEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FilterEmoji.h"; sourceTree = "<group>"; };
+		25CC3A9A17CB362800AAC760 /* NSString+FilterEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilterEmoji.m"; sourceTree = "<group>"; };
 		25CC3A9C17CB367B00AAC760 /* TWAppNew-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWAppNew-Prefix.pch"; sourceTree = "<group>"; };
 		25CC3A9E17CB454B00AAC760 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		25CC3A9F17CB454B00AAC760 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
@@ -518,6 +524,10 @@
 				25CC393A17CB301800AAC760 /* TWTextField.m */,
 				25CC393B17CB301800AAC760 /* TWViewController.h */,
 				25CC393C17CB301800AAC760 /* TWViewController.m */,
+				25A68DFD17CD8DE700D6D2AE /* TWTextView.h */,
+				25A68DFE17CD8DE700D6D2AE /* TWTextView.m */,
+				25A68E0017CD8E3200D6D2AE /* TWButton.h */,
+				25A68E0117CD8E3200D6D2AE /* TWButton.m */,
 			);
 			path = TWUIKit;
 			sourceTree = "<group>";
@@ -575,8 +585,8 @@
 				25CC396617CB301800AAC760 /* UIView+Frame.m */,
 				25CC396717CB301800AAC760 /* UIView+Layer.h */,
 				25CC396817CB301800AAC760 /* UIView+Layer.m */,
-				25CC3A9917CB362800AAC760 /* UITextView+FilterEmoji.h */,
-				25CC3A9A17CB362800AAC760 /* UITextView+FilterEmoji.m */,
+				25CC3A9917CB362800AAC760 /* NSString+FilterEmoji.h */,
+				25CC3A9A17CB362800AAC760 /* NSString+FilterEmoji.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1104,6 +1114,7 @@
 				25CC3A3E17CB301800AAC760 /* FMResultSet.m in Sources */,
 				25CC3A3217CB301800AAC760 /* UIDevice+IdentifierAddition.m in Sources */,
 				25CC3A3C17CB301800AAC760 /* FMDatabasePool.m in Sources */,
+				25A68DFF17CD8DE700D6D2AE /* TWTextView.m in Sources */,
 				25CC3A4817CB301800AAC760 /* MKAnnotationView+WebCache.m in Sources */,
 				25CC3A3317CB301800AAC760 /* UIImage+Addition.m in Sources */,
 				25CC3A8317CB301800AAC760 /* SEFilterKnob.m in Sources */,
@@ -1125,7 +1136,7 @@
 				25CC3A3017CB301800AAC760 /* UIColor+Addition.m in Sources */,
 				25CC3A2317CB301800AAC760 /* TWTextField.m in Sources */,
 				25CC3A6E17CB301800AAC760 /* MarqueeLabel.m in Sources */,
-				25CC3A9B17CB362800AAC760 /* UITextView+FilterEmoji.m in Sources */,
+				25CC3A9B17CB362800AAC760 /* NSString+FilterEmoji.m in Sources */,
 				25CC3A3717CB301800AAC760 /* UIView+Animation.m in Sources */,
 				25CC3A8717CB301800AAC760 /* TVSlider.m in Sources */,
 				25CC3A7117CB301800AAC760 /* UIView+Animations.m in Sources */,
@@ -1144,6 +1155,7 @@
 				25CC3A5217CB301800AAC760 /* AttributedLabel.m in Sources */,
 				25CC3A3B17CB301800AAC760 /* FMDatabaseAdditions.m in Sources */,
 				25CC3A4017CB301800AAC760 /* NSDate+RFC1123.m in Sources */,
+				25A68E0217CD8E3200D6D2AE /* TWButton.m in Sources */,
 				25CC3A7717CB301800AAC760 /* MBSpinningCircle.m in Sources */,
 				25CC3A6C17CB301800AAC760 /* RRSGlowLabel.m in Sources */,
 				25CC3A5117CB301800AAC760 /* UIImageView+WebCache.m in Sources */,
